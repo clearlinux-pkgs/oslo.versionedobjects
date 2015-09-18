@@ -1,4 +1,4 @@
-# openstack (Kilo stable) needs version >=0.1.1,<0.2.0
-# once they update requirement, we can push >=0.2.0 versions
-# check: https://github.com/openstack/requirements/blob/stable/kilo/global-requirements.txt
-watchurl=http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-(0.1.*).tar.gz.*
+# openstack kilo/stable needs version <2.0
+# once they update requirement, we can push >=2.0 versions
+# check https://github.com/openstack/requirements/blob/stable/kilo/global-requirements.txt for more infomation
+watchurl=http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-(1.1.[\d.]*).tar.gz.*
