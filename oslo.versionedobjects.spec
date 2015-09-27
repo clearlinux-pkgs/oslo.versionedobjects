@@ -4,7 +4,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 0.10.0
-Release  : 6
+Release  : 7
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-0.10.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-0.10.0.tar.gz
 Summary  : Oslo Versioned Objects library
@@ -95,6 +95,17 @@ oslo.versionedobjects
 %package python
 Summary: python components for the oslo.versionedobjects package.
 Group: Default
+Requires: Babel-python
+Requires: WebOb-python
+Requires: iso8601-python
+Requires: oslo.concurrency-python
+Requires: oslo.context-python
+Requires: oslo.i18n-python
+Requires: oslo.log-python
+Requires: oslo.messaging-python
+Requires: oslo.serialization-python
+Requires: oslo.utils-python
+Requires: six-python
 
 %description python
 python components for the oslo.versionedobjects package.
