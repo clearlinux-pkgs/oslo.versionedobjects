@@ -4,7 +4,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 0.10.0
-Release  : 7
+Release  : 8
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-0.10.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-0.10.0.tar.gz
 Summary  : Oslo Versioned Objects library
