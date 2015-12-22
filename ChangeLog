@@ -1,10 +1,25 @@
 CHANGES
 =======
 
+1.2.0
+-----
+
+* Added checking compat using manifest backports
+* Fixed nondeterministicness of extra_data test
+* Updated from global requirements
+* Updated from global requirements
+* Updated from global requirements
+* Clean up directory openstack/common
+* Use method is_compatible from olso_utils.versionutils
+* Trival: Remove 'MANIFEST.in'
+
 1.1.0
 -----
 
+* Add a callable to gather extra data for fps
 * Add testing for ObjectVersionChecker fixture
+* Leverage dict comprehension in PEP-0274
+* Use version convert methods from oslo_utils.versionutils
 
 1.0.0
 -----
