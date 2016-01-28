@@ -1,6 +1,22 @@
 CHANGES
 =======
 
+1.4.0
+-----
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* Updated from global requirements
+* Move compare_obj to the fixture module for external consumption
+
+1.3.0
+-----
+
+* Updated from global requirements
+* Fix MACAddress coerce method to validate string first
+* Updated from global requirements
+* Remove meaningless default value in __get__()
+
 1.2.0
 -----
 
