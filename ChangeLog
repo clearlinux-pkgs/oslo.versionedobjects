@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+1.5.0
+-----
+
+* Deprecate current UUIDField behaviour
+* Make sure functions in child object registries work
+* Update translation setup
+* Updated from global requirements
+* Add ability to pass args/kwargs to obj_class init
+* Updated from global requirements
+* Added a state machine field
+* Use oslo_utils for tupleizing versions
+* Add temporary registry pattern to VersionedObjectRegistry
+
 1.4.0
 -----
 
