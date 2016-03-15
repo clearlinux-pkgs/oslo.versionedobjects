@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+1.7.0
+-----
+
+* Updated from global requirements
+* Updated from global requirements
+
 1.6.0
 -----
 
@@ -12,6 +18,7 @@ CHANGES
 
 * Deprecate current UUIDField behaviour
 * Make sure functions in child object registries work
+* Fix messages in exceptions raised due to invalid state transitions
 * Update translation setup
 * Updated from global requirements
 * Add ability to pass args/kwargs to obj_class init
