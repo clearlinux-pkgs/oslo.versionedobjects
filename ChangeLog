@@ -1,6 +1,19 @@
 CHANGES
 =======
 
+1.13.0
+------
+
+* Updated from global requirements
+* Imported Translations from Zanata
+* JSON schema get_schema implementation for common fields
+* Updated from global requirements
+* JSON schema generation for versioned objects
+* Extend test_hashes to allow extra info gathering
+* Updated from global requirements
+* Improved error message for Object.coerce
+* Imported Translations from Zanata
+
 1.12.0
 ------
 
