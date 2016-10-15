@@ -1,6 +1,25 @@
 CHANGES
 =======
 
+1.17.0
+------
+
+* Add get_schema for IPV6Address FieldType class
+* Fix remotable object change tracking
+
+1.16.0
+------
+
+* Updated from global requirements
+* JSON schema get_schema implementation for more complex fields
+
+1.15.0
+------
+
+* Updated from global requirements
+* Adds new fields and field types
+* Fix to_json_schema() call
+
 1.14.0
 ------
 
