@@ -1,6 +1,20 @@
 CHANGES
 =======
 
+1.18.0
+------
+
+* Changed the home-page link
+* Updated from global requirements
+* Changed the home-page link
+* Updated from global requirements
+* JSON Schema get_schema implementation for last few fields
+* Updated from global requirements
+* Add ObjectListBase concat methods
+* Fix documentation typo
+* Fix incorrect timestamp comment
+* Updated from global requirements
+
 1.17.0
 ------
 
