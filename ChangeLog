@@ -1,6 +1,41 @@
 CHANGES
 =======
 
+1.22.0
+------
+
+* Updated from global requirements
+* [Fix gate]Update test requirement
+* Updated from global requirements
+* Remove support for py34
+* Update reno for stable/ocata
+
+1.21.0
+------
+
+* Change Object schema type to be array instead of string
+* Add Constraints support
+* Replace six.iteritems() with .items()
+* Updated from global requirements
+
+1.20.0
+------
+
+
+1.19.0
+------
+
+* Fix a typo
+* Show team and repo badges on README
+* Updated from global requirements
+* Add reno for release notes management
+* fields: fix stringifying of objects when subclasses=True
+* Refactor get_schema for patterned FieldTypes
+* Updated from global requirements
+* Fix recursive deepcopy
+* Updated from global requirements
+* Fix get_schema() for Enum
+
 1.18.0
 ------
 
