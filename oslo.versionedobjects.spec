@@ -6,7 +6,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 1.23.0
-Release  : 33
+Release  : 34
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.23.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.23.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.23.0.tar.gz.asc
@@ -54,12 +54,12 @@ python components for the oslo.versionedobjects package.
 
 %build
 export LANG=C
-export SOURCE_DATE_EPOCH=1490650236
+export SOURCE_DATE_EPOCH=1490884654
 python2 setup.py build -b py2
 python3 setup.py build -b py3
 
 %install
-export SOURCE_DATE_EPOCH=1490650236
+export SOURCE_DATE_EPOCH=1490884654
 rm -rf %{buildroot}
 python2 -tt setup.py build -b py2 install --root=%{buildroot} --force
 python3 -tt setup.py build -b py3 install --root=%{buildroot} --force
@@ -72,5 +72,4 @@ echo ----[ mark ]----
 
 %files python
 %defattr(-,root,root,-)
-/usr/lib/python2*/*
-/usr/lib/python3*/*
+/usr/lib/python*/*
