@@ -1,6 +1,17 @@
 CHANGES
 =======
 
+1.34.1
+------
+
+* Imported Translations from Zanata
+* add lib-forward-testing-python3 test job
+* add python 3.6 unit test job
+* import zuul job settings from project-config
+* delete unused '='
+* Update reno for stable/rocky
+* Switch to stestr
+
 1.33.3
 ------
 
