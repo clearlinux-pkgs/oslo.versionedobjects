@@ -6,16 +6,16 @@
 #
 Name     : oslo.versionedobjects
 Version  : 1.34.1
-Release  : 38
+Release  : 39
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.34.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.34.1.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.34.1.tar.gz.asc
 Summary  : Oslo Versioned Objects library
 Group    : Development/Tools
 License  : Apache-2.0
-Requires: oslo.versionedobjects-python3
-Requires: oslo.versionedobjects-license
-Requires: oslo.versionedobjects-python
+Requires: oslo.versionedobjects-license = %{version}-%{release}
+Requires: oslo.versionedobjects-python = %{version}-%{release}
+Requires: oslo.versionedobjects-python3 = %{version}-%{release}
 Requires: Sphinx
 Requires: WebOb
 Requires: fixtures
@@ -74,13 +74,13 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1537929194
+export SOURCE_DATE_EPOCH=1541271174
 python3 setup.py build
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/doc/oslo.versionedobjects
-cp LICENSE %{buildroot}/usr/share/doc/oslo.versionedobjects/LICENSE
+mkdir -p %{buildroot}/usr/share/package-licenses/oslo.versionedobjects
+cp LICENSE %{buildroot}/usr/share/package-licenses/oslo.versionedobjects/LICENSE
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
@@ -91,7 +91,7 @@ echo ----[ mark ]----
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/doc/oslo.versionedobjects/LICENSE
+/usr/share/package-licenses/oslo.versionedobjects/LICENSE
 
 %files python
 %defattr(-,root,root,-)
