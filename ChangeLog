@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.35.0
+------
+
+* Lower ObjectVersionChecker logging to DEBUG level
+* Add ListOfUUIDField
+* Use template for lower-constraints
+* Update mailinglist from dev to discuss
+* Clean up .gitignore references to personal tools
+
 1.34.1
 ------
 
