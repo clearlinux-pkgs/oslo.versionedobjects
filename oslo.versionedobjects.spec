@@ -6,7 +6,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 1.35.0
-Release  : 41
+Release  : 42
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.0.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.0.tar.gz.asc
@@ -16,12 +16,9 @@ License  : Apache-2.0
 Requires: oslo.versionedobjects-license = %{version}-%{release}
 Requires: oslo.versionedobjects-python = %{version}-%{release}
 Requires: oslo.versionedobjects-python3 = %{version}-%{release}
-Requires: Sphinx
 Requires: WebOb
-Requires: fixtures
 Requires: iso8601
 Requires: netaddr
-Requires: openstackdocstheme
 Requires: oslo.concurrency
 Requires: oslo.config
 Requires: oslo.context
@@ -30,8 +27,6 @@ Requires: oslo.log
 Requires: oslo.messaging
 Requires: oslo.serialization
 Requires: oslo.utils
-Requires: python-mock
-Requires: reno
 Requires: six
 BuildRequires : buildreq-distutils3
 BuildRequires : pbr
@@ -77,7 +72,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1550179674
+export SOURCE_DATE_EPOCH=1551030404
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
