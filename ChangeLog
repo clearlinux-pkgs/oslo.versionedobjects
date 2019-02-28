@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+1.35.1
+------
+
+* add python 3.7 unit test job
+* Allow lists to be generated from any non-string iterable
+* Update hacking version
+
 1.35.0
 ------
 

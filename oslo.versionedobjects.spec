@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x1A541148054E9E38 (infra-root@openstack.org)
 #
 Name     : oslo.versionedobjects
-Version  : 1.35.0
-Release  : 42
-URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.0.tar.gz
-Source99 : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.0.tar.gz.asc
+Version  : 1.35.1
+Release  : 43
+URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.1.tar.gz
+Source99 : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.1.tar.gz.asc
 Summary  : Oslo Versioned Objects library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -65,14 +65,14 @@ python3 components for the oslo.versionedobjects package.
 
 
 %prep
-%setup -q -n oslo.versionedobjects-1.35.0
+%setup -q -n oslo.versionedobjects-1.35.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1551030404
+export SOURCE_DATE_EPOCH=1551396322
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
 
