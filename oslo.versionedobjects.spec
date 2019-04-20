@@ -6,7 +6,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 1.35.1
-Release  : 43
+Release  : 44
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.1.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.1.tar.gz
 Source99 : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.35.1.tar.gz.asc
