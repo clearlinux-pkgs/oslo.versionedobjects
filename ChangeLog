@@ -1,6 +1,14 @@
 CHANGES
 =======
 
+1.36.0
+------
+
+* OpenDev Migration Patch
+* Fix deprecation warnings
+* Replace openstack.org git:// URLs with https://
+* Update master for stable/stein
+
 1.35.1
 ------
 
