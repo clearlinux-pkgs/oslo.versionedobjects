@@ -1,2 +1,8 @@
 # This file contains recursive sources that require this package
+barbican
+cinder
 ironic
+neutron
+neutron-lib
+nova
+os_vif

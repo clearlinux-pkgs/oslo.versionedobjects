@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+1.36.1
+------
+
+* Add Python 3 Train unit tests
+* Resolve some issue with tox.ini, setup.cfg
+* Dropping the py35 testing
+* Replace git.openstack.org URLs with opendev.org URLs
+* Cap Bandit below 1.6.0, update sphinx requirement, uncap jsonschema
+
 1.36.0
 ------
 
