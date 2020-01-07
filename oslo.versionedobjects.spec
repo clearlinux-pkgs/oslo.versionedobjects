@@ -6,7 +6,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 1.37.0
-Release  : 49
+Release  : 50
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.37.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.37.0.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-1.37.0.tar.gz.asc
