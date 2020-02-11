@@ -1,6 +1,15 @@
 CHANGES
 =======
 
+2.0.0
+-----
+
+* Provide stable getargspec() behavior for method fingerprinting
+* Bump to hacking 2.x
+* Drop use of six
+* [ussuri][goal] Drop python 2.7 support and testing
+* gitignore: Ignore reno artefacts
+
 1.37.0
 ------
 
