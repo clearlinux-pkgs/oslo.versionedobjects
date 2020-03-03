@@ -6,7 +6,7 @@
 #
 Name     : oslo.versionedobjects
 Version  : 2.0.0
-Release  : 51
+Release  : 52
 URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.0.tar.gz
 Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.0.tar.gz
 Source1  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.0.tar.gz.asc
@@ -45,8 +45,35 @@ BuildRequires : pbr
 ========================
 Team and repository tags
 ========================
+
 .. image:: https://governance.openstack.org/tc/badges/oslo.versionedobjects.svg
-:target: https://governance.openstack.org/tc/reference/tags/index.html
+    :target: https://governance.openstack.org/tc/reference/tags/index.html
+
+.. Change things from this point on
+
+=====================
+oslo.versionedobjects
+=====================
+
+.. image:: https://img.shields.io/pypi/v/oslo.versionedobjects.svg
+    :target: https://pypi.org/project/oslo.versionedobjects/
+    :alt: Latest Version
+
+.. image:: https://img.shields.io/pypi/dm/oslo.versionedobjects.svg
+    :target: https://pypi.org/project/oslo.versionedobjects/
+    :alt: Downloads
+
+The oslo.versionedobjects library provides a generic versioned object model
+that is RPC-friendly, with inbuilt serialization, field typing, and remotable
+method calls. It can be used to define a data model within a project
+independent of external APIs or database schema for the purposes of providing
+upgrade compatibility across distributed services.
+
+* Free software: Apache license
+* Documentation: https://docs.openstack.org/oslo.versionedobjects/latest
+* Source: http://opendev.org/openstack/oslo.versionedobjects
+* Bugs: http://bugs.launchpad.net/oslo.versionedobjects
+* Release notes: https://docs.openstack.org/releasenotes/oslo.versionedobjects/
 
 %package license
 Summary: license components for the oslo.versionedobjects package.
@@ -69,6 +96,7 @@ python components for the oslo.versionedobjects package.
 Summary: python3 components for the oslo.versionedobjects package.
 Group: Default
 Requires: python3-core
+Provides: pypi(oslo.versionedobjects)
 
 %description python3
 python3 components for the oslo.versionedobjects package.
@@ -83,7 +111,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581453677
+export SOURCE_DATE_EPOCH=1583195304
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
