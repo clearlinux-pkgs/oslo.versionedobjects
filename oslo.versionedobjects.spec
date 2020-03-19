@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x4F398DEAE440091C (infra-root@openstack.org)
 #
 Name     : oslo.versionedobjects
-Version  : 2.0.0
-Release  : 52
-URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.0.tar.gz
-Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.0.tar.gz
-Source1  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.0.tar.gz.asc
+Version  : 2.0.1
+Release  : 53
+URL      : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.1.tar.gz
+Source0  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.1.tar.gz
+Source1  : http://tarballs.openstack.org/oslo.versionedobjects/oslo.versionedobjects-2.0.1.tar.gz.asc
 Summary  : Oslo Versioned Objects library
 Group    : Development/Tools
 License  : Apache-2.0
@@ -45,35 +45,8 @@ BuildRequires : pbr
 ========================
 Team and repository tags
 ========================
-
 .. image:: https://governance.openstack.org/tc/badges/oslo.versionedobjects.svg
-    :target: https://governance.openstack.org/tc/reference/tags/index.html
-
-.. Change things from this point on
-
-=====================
-oslo.versionedobjects
-=====================
-
-.. image:: https://img.shields.io/pypi/v/oslo.versionedobjects.svg
-    :target: https://pypi.org/project/oslo.versionedobjects/
-    :alt: Latest Version
-
-.. image:: https://img.shields.io/pypi/dm/oslo.versionedobjects.svg
-    :target: https://pypi.org/project/oslo.versionedobjects/
-    :alt: Downloads
-
-The oslo.versionedobjects library provides a generic versioned object model
-that is RPC-friendly, with inbuilt serialization, field typing, and remotable
-method calls. It can be used to define a data model within a project
-independent of external APIs or database schema for the purposes of providing
-upgrade compatibility across distributed services.
-
-* Free software: Apache license
-* Documentation: https://docs.openstack.org/oslo.versionedobjects/latest
-* Source: http://opendev.org/openstack/oslo.versionedobjects
-* Bugs: http://bugs.launchpad.net/oslo.versionedobjects
-* Release notes: https://docs.openstack.org/releasenotes/oslo.versionedobjects/
+:target: https://governance.openstack.org/tc/reference/tags/index.html
 
 %package license
 Summary: license components for the oslo.versionedobjects package.
@@ -97,21 +70,32 @@ Summary: python3 components for the oslo.versionedobjects package.
 Group: Default
 Requires: python3-core
 Provides: pypi(oslo.versionedobjects)
+Requires: pypi(iso8601)
+Requires: pypi(netaddr)
+Requires: pypi(oslo.concurrency)
+Requires: pypi(oslo.config)
+Requires: pypi(oslo.context)
+Requires: pypi(oslo.i18n)
+Requires: pypi(oslo.log)
+Requires: pypi(oslo.messaging)
+Requires: pypi(oslo.serialization)
+Requires: pypi(oslo.utils)
+Requires: pypi(webob)
 
 %description python3
 python3 components for the oslo.versionedobjects package.
 
 
 %prep
-%setup -q -n oslo.versionedobjects-2.0.0
-cd %{_builddir}/oslo.versionedobjects-2.0.0
+%setup -q -n oslo.versionedobjects-2.0.1
+cd %{_builddir}/oslo.versionedobjects-2.0.1
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583195304
+export SOURCE_DATE_EPOCH=1584633884
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
@@ -125,7 +109,7 @@ python3 setup.py build
 export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/oslo.versionedobjects
-cp %{_builddir}/oslo.versionedobjects-2.0.0/LICENSE %{buildroot}/usr/share/package-licenses/oslo.versionedobjects/294b43b2cec9919063be1a3b49e8722648424779
+cp %{_builddir}/oslo.versionedobjects-2.0.1/LICENSE %{buildroot}/usr/share/package-licenses/oslo.versionedobjects/294b43b2cec9919063be1a3b49e8722648424779
 python3 -tt setup.py build  install --root=%{buildroot}
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :

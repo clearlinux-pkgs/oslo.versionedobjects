@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+2.0.1
+-----
+
+* remove outdated header
+
 2.0.0
 -----
 
@@ -8,6 +13,7 @@ CHANGES
 * Bump to hacking 2.x
 * Drop use of six
 * [ussuri][goal] Drop python 2.7 support and testing
+* Handle unregistered nested objects
 * gitignore: Ignore reno artefacts
 
 1.37.0
