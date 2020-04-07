@@ -1,6 +1,11 @@
 CHANGES
 =======
 
+2.0.2
+-----
+
+* Use unittest.mock instead of third party mock
+
 2.0.1
 -----
 

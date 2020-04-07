@@ -1,9 +1,7 @@
 # This file contains recursive sources that require this package
-barbican
 cinder
 heat
 ironic
 neutron
 neutron-lib
-nova
 os_vif
