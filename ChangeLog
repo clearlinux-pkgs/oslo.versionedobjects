@@ -1,6 +1,13 @@
 CHANGES
 =======
 
+2.3.0
+-----
+
+* [goal] Migrate testing to ubuntu focal
+* zuul: port the legacy multinode grenade job
+* Bump bandit version
+
 2.2.0
 -----
 
@@ -14,6 +21,7 @@ CHANGES
 * Switch to newer openstackdocstheme and reno versions
 * Imported Translations from Zanata
 * Update hacking for Python3
+* Align contributing doc with oslo's policy
 * Bump default tox env from py37 to py38
 * Add py38 package metadata
 * trivial: Mock warnings
